@@ -4,7 +4,7 @@
 
 struct Node
 {
-  std::string resturantName;
+  std::string restaurantName;
   int size;
   
 };
