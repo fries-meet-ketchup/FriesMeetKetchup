@@ -11,12 +11,15 @@ struct Node
 
 class Heap {
 private:
-    Node* priorityQueue; //pointer to the array used to implement priority queue
-    int currentQueueSize; 
-    int maxQueueSize;
+  Node* priorityQueue; //pointer to the array used to implement priority queue
+  int currentQueueSize;
+  int maxQueueSize;
 
 public:
-
+  Heap(int queueSize);
+  ~Heap();
+  
+  
 };
 
 #endif
