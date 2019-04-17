@@ -98,6 +98,9 @@ bool Heap::matching(string answer, ){
   if( answer == ){
     return true;
   }
+  else{
+    return false;
+  }
 }
 
 int Heap::counting(Node ){
