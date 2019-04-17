@@ -16,7 +16,34 @@ void menu()
 
 int main(int argc, char* argv[])
 {
+  Heap pq(stoi(argv[1]));
+  string choice;
   
-  
-  
+  while (choice != "7")
+  {
+    menu();
+    getline(cin, choice);
+    switch (stoi(choice))
+    {
+      case 1:
+      {
+        breakl;
+      }
+        
+        
+        
+      case 6:
+      {
+        cout << "Goodbye!" << endl;
+        return 0;
+      }
+      default:
+      {
+        cout << "invalid input" << endl<<endl;
+        break;
+      }
+    }
+  }
+  menu();
+  return 0;
 }
