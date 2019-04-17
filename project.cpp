@@ -93,3 +93,13 @@ void Heap::repairDownward(int nodeIndex)
     nodeIndex = smallest;
   }
 }
+
+bool Heap::matching(string answer, ){
+  if( answer == ){
+    return true;
+  }
+}
+
+int Heap::counting(Node ){
+  
+}
