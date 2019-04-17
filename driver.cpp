@@ -18,7 +18,23 @@ int main(int argc, char* argv[])
 {
   Heap pq(stoi(argv[1]));
   string choice;
-  
+  string filename;
+  string line;
+  string type;
+  ifstream inStream (filename);
+  if (inStream.is_open())
+  {
+    while (getline(inStream,line)){
+      if(line != ""){
+        stringstream str;
+        string t;
+        getline(str, t, ' ');
+        type = t;
+        
+//         pq.enqueue(type, , );
+      }
+    }
+  }
   while (choice != "7")
   {
     menu();
@@ -27,7 +43,7 @@ int main(int argc, char* argv[])
     {
       case 1:
       {
-        breakl;
+        break;
       }
         
         
@@ -44,6 +60,7 @@ int main(int argc, char* argv[])
       }
     }
   }
+  inStream.close();
   menu();
   return 0;
 }
