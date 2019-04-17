@@ -12,6 +12,8 @@ struct Node
   string price;
   string city;
   double rating;
+  int key; //count ++ 
+  
   
 };
 
