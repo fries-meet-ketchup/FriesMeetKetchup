@@ -57,7 +57,7 @@ void Heap::dequeue(){
     cout<<"Heap empty, cannot dequeue"<<endl;
     return;
   }
-  temp = heap[0];
+  temp = priorityQueue[0];
   priorityQueue[0] = priorityQueue[currentQueueSize-1];
   currentQueueSize--;
   repairDownward(0);
@@ -93,7 +93,7 @@ bool Heap::isEmpty(){
 
 void Heap::repairUpward(int nodeIndex)
 {
-  while(nodeIndex != 0 && (priorityQueue[parent(nodeIndex)] > priorityQueue[nodeIndex])){
+  while(nodeIndex != 0 && (priorityQueue[parent(nodeIndex)].rating > priorityQueue[nodeIndex]rating)){
     swap(&priorityQueue[nodeIndex], &priorityQueue[parent(nodeIndex)]);
     nodeIndex = parent(nodeIndex);
   }
@@ -104,11 +104,11 @@ void Heap::repairDownward(int nodeIndex)
   int right = rightChild(nodeIndex);
   int left = leftChild(nodeIndex);
   int smallest = nodeIndex;
-  if(left< currentSize && ((priorityQueue[left] < priorityQueue[nodeIndex]) || ( priorityQueue[left] == priorityQueue[nodeIndex])))
+  if(left< currentSize && ((priorityQueue[left].rating < priorityQueue[nodeIndex].rating) || ( priorityQueue[left].rating == priorityQueue[nodeIndex].rating)))
   {
     smallest = left;
   }
-  if(right < currentSize &&((priorityQueue[right] < priorityQueue[smallest]) || ( priorityQueue[right] == priorityQueue[smallest])))
+  if(right < currentSize &&((priorityQueue[right].rating < priorityQueue[smallest].rating) || ( priorityQueue[right].rating == priorityQueue[smallest],rating)))
   {
     smallest = right;
   }
@@ -127,6 +127,10 @@ bool Heap::matching(string answer, ){
   }
 }
 
-int Heap::counting(Node ){
-  
-}
+void Heap::printArray(int arr[], int n) 
+{
+  cout<<"---------------Restaurant suggestions:--------------------"<<endl;
+    for (int i=0; i<n; ++i) 
+        cout << arr[i] << " "; 
+    cout << endl; 
+}     
