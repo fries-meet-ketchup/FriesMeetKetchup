@@ -37,16 +37,40 @@ int rightChild(int index)
  return ((2*index) + 2);
 }
 
-void Heap::enqueue(string, string, string, string, string, string, double){
-  
+void Heap::enqueue(string _restaurant, double _rating){
+  Node temp;
+  temp.restaurant = _restaurant;
+  temp.rating = _rating;
+  if(isFull(){
+    cout << "Heap full, cannot enqueue" << endl;
+    return;
+  }
+  currentQueueSize++;
+  int index = currentQueueSize - 1;
+  priorityQueue[index] = temp;
+  repairUpward(index);
 }
 
 void Heap::dequeue(){
-  
+  Node temp;
+  if(currentQueueSize==0){
+    cout<<"Heap empty, cannot dequeue"<<endl;
+    return;
+  }
+  temp = heap[0];
+  priorityQueue[0] = priorityQueue[currentQueueSize-1];
+  currentQueueSize--;
+  repairDownward(0);
 }
 
 Node Heap::peek(){
-  
+  if(isEmpty()){
+      cout<< "Heap empty, nothing to peek" <<endl;
+      Node node;
+      node.restaurant = "";
+      return node;
+    }
+    return priorityQueue[0];
 }
 
 bool Heap::isFull(){
@@ -69,7 +93,7 @@ bool Heap::isEmpty(){
 
 void Heap::repairUpward(int nodeIndex)
 {
-  while (nodeIndex != 0 && (priorityQueue[parent(nodeIndex)] > priorityQueue[nodeIndex])){
+  while(nodeIndex != 0 && (priorityQueue[parent(nodeIndex)] > priorityQueue[nodeIndex])){
     swap(&priorityQueue[nodeIndex], &priorityQueue[parent(nodeIndex)]);
     nodeIndex = parent(nodeIndex);
   }
