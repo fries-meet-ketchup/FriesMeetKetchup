@@ -93,7 +93,7 @@ bool Heap::isEmpty(){
 
 void Heap::repairUpward(int nodeIndex)
 {
-  while(nodeIndex != 0 && (priorityQueue[parent(nodeIndex)].rating > priorityQueue[nodeIndex]rating)){
+  while(nodeIndex != 0 && (priorityQueue[parent(nodeIndex)].rating < priorityQueue[nodeIndex]rating)){
     swap(&priorityQueue[nodeIndex], &priorityQueue[parent(nodeIndex)]);
     nodeIndex = parent(nodeIndex);
   }
@@ -104,11 +104,11 @@ void Heap::repairDownward(int nodeIndex)
   int right = rightChild(nodeIndex);
   int left = leftChild(nodeIndex);
   int smallest = nodeIndex;
-  if(left< currentSize && ((priorityQueue[left].rating < priorityQueue[nodeIndex].rating) || ( priorityQueue[left].rating == priorityQueue[nodeIndex].rating)))
+  if(left< currentSize && ((priorityQueue[left].rating > priorityQueue[nodeIndex].rating) || ( priorityQueue[left].rating == priorityQueue[nodeIndex].rating)))
   {
     smallest = left;
   }
-  if(right < currentSize &&((priorityQueue[right].rating < priorityQueue[smallest].rating) || ( priorityQueue[right].rating == priorityQueue[smallest],rating)))
+  if(right < currentSize &&((priorityQueue[right].rating > priorityQueue[smallest].rating) || ( priorityQueue[right].rating == priorityQueue[smallest],rating)))
   {
     smallest = right;
   }
