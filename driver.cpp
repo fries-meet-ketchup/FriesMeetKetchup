@@ -45,44 +45,14 @@ int main(int argc, char* argv[])
     while (getline(inStream,line)){
       if(line != "")
       {
-        // cout << line << endl;
         stringstream str(line);
-        string t;
-        getline(str, t, ',');
-        type = t;
-        cout<<"Testing: "<<type<<" rest. "<<endl;
-        string r;
-        getline(str, r, ',');
-        restaurant = r;
-        cout<<"Testing: "<<restaurant<<" type. "<<endl;
-
-        string v;
-        getline(str, v, ',');
-        vegeterian = v;
-        cout<<"Testing: "<<vegeterian<<" veg. "<<endl;
-
-        string c;
-        getline(str, c, ',');
-        country = c;
-        cout<<"Testing: "<<country<<" country "<<endl;
+        getline(str, type, ',');
+        getline(str, restaurant, ',');
+        getline(str, vegeterian, ',');
+        getline(str, country, ',');
         getline(str, rating, ',');
-        cout<<"Testing: "<<rating<<" rating "<<endl;
-
-        string p;
-        getline(str, p, ',');
-        price = p;
-        cout<<"Testing: "<<price<<" price "<<endl;
-
+        getline(str, price, ',');
         getline(str, city,',');
-
-        cout<<"Testing: "<<city<<" city "<<endl;
-
-        // cout<<"Testing: "<<type;
-        // cout << country << "&" <<  answerCountry << endl;
-        // cout<<  type << "&" << answerType << endl;
-        // cout << city <<"&" << answerCity <<endl;
-        // cout << vegeterian << "&" << answerVeg << endl;
-        // cout <<price << "&" <<answerPrice << endl;
         if(country == answerCountry && type == answerType && city == answerCity && vegeterian == answerVeg && price == answerPrice){
           pq.enqueue(restaurant, stod(rating));
         }
@@ -93,4 +63,3 @@ int main(int argc, char* argv[])
   inStream.close();
   return 0;
 }
-
