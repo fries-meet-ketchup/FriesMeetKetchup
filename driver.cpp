@@ -46,7 +46,8 @@ int main(int argc, char* argv[])
   ifstream inStream (filename);
   if (inStream.is_open())
   {
-    while (getline(inStream,line)){
+     while (getline(inStream,line))
+    {
       if(line != "")
       {
         stringstream str(line);
@@ -57,22 +58,32 @@ int main(int argc, char* argv[])
         getline(str, rating, ',');
         getline(str, price, ',');
         getline(str, city,',');
-        if(country == answerCountry && type == answerType && city == answerCity && vegeterian == answerVeg && price == answerPrice){
-          pq.enqueue(restaurant, stod(rating));
+        if(country == answerCountry &&
+          type == answerType &&
+          city == answerCity &&
+          vegeterian == answerVeg &&
+          price == answerPrice)
+        {
+          pq1.enqueue(restaurant, stod(rating));
           flag = true;
         }
-        else if (flag == false&&city == answerCity )
+  
+        else
         {
-          cout<<endl;
-          cout << "There is nothing matched." << endl;
-          cout << "Here are the top four recommendations based on your city" << endl;
-          break;
+          if (city == answerCity)
+          pq2.enqueue(restaurant,stod(rating));
         }
-        pq.enqueue(restaurant, stod(rating));
+        }
+      }
+      if (flag == false)
+      {
+        pq2.printArray(print);
+      }
+      else
+      {
+        pq1.printArray(print);
       }
     }
-  }
-  pq.printArray(n);
   inStream.close();
   return 0;
 }
