@@ -10,8 +10,9 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-  int n = 6;
+  int n = 4;
   Heap pq(n);
+  bool flag = false;
   string country;
   string city;
   string type;
@@ -55,11 +56,21 @@ int main(int argc, char* argv[])
         getline(str, city,',');
         if(country == answerCountry && type == answerType && city == answerCity && vegeterian == answerVeg && price == answerPrice){
           pq.enqueue(restaurant, stod(rating));
+          flag = true;
+        }
+        if (flag == false)
+        {
+          cout << "There is nothing matched." << endl;
+          cout << "Here are the top four recommendations based on your city" << endl;
+          if(city == answerCity ){
+            pq.enqueue(restaurant, stod(rating));
+          //call the function
+        }
         }
       }
     }
-    pq.printArray(n);
   }
+  pq.printArray(n);
   inStream.close();
   return 0;
 }
