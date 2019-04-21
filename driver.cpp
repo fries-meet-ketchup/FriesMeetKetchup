@@ -58,15 +58,14 @@ int main(int argc, char* argv[])
           pq.enqueue(restaurant, stod(rating));
           flag = true;
         }
-        if (flag == false)
+        else if (flag == false&&city == answerCity )
         {
+          cout<<endl;
           cout << "There is nothing matched." << endl;
           cout << "Here are the top four recommendations based on your city" << endl;
-          if(city == answerCity ){
-            pq.enqueue(restaurant, stod(rating));
-          //call the function
+          break;
         }
-        }
+        pq.enqueue(restaurant, stod(rating));
       }
     }
   }
