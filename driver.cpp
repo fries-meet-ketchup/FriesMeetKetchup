@@ -10,8 +10,10 @@ using namespace std;
 
 int main(int argc, char* argv[])
 {
-  int n = 4;
-  Heap pq(n);
+  int print = 6; //how many we want to print
+  int maxsize = 5; //max size for heap
+  Heap pq1(maxsize); 
+  Heap pq2(maxsize);
   bool flag = false;
   string country;
   string city;
