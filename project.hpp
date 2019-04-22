@@ -9,13 +9,22 @@ using namespace std;
 struct Node
 {
   string restaurant;
-  string type;
-  string veggie;
-  string country;
-  string price;
-  string city;
   double rating;
   int key; //count ++
+
+};
+
+struct Node2
+{
+  string name;
+  string face;
+  string job;
+  string gender;
+  string age;
+  string interset1;
+  string interset2;
+  string city;
+  string realAge;
 
 };
 
@@ -43,4 +52,3 @@ public:
 };
 
 #endif
-
