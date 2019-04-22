@@ -27,19 +27,67 @@
 ;<,Jenna,24,1,Student,2,3,Boulder,2
 ;<,Jenna,26,1,Grad Student,2,3,Denver,3
 ;<,Jenna,31,1,Professor,2,3,Boulder,4
+:),Ping,19,1,Student,2,4,Boulder,1
 :),Ping,22,1,Student,2,4,Boulder,2
+:),Ping,27,1,Grad Student,2,4,Boulder,3
+:),Ping,35,1,Artist,2,4,Boulder,4
+:#,Rachel,20,1,Student,2,5,Denver,1
+:#,Rachel,25,1,Student,2,5,Denver,2
+:#,Rachel,36,1,Business,2,5,Denver,3
 :#,Rachel,35,1,Business,2,5,Denver,4
-ㅇㅅㅇ,Peter,28,2,Lawyer,2,6,Westminster,3
-^.^,Victoria,30,1,Engineer,2,7,Westminster,3
+ㅇㅅㅇ,Justin,18,2,Student,2,6,Westminster,1
+ㅇㅅㅇ,Justin,24,2,Student,2,6,Westminster,2
+ㅇㅅㅇ,Justin,28,2,Lawyer,2,6,Westminster,3
+ㅇㅅㅇ,Justin,31,2,Lawyer,2,6,Westminster,4
+^.^,Victoria,19,1,Studnet,2,7,Westminster,1
+^.^,Victoria,23,1,Student,2,7,Westminster,2
+^.^,Victoria,27,1,Engineer,2,7,Westminster,3
+^.^,Victoria,31,1,Engineer,2,7,Westminster,4
+T.T,Alex,19,2,Student,3,4,Denver,1
+T.T,Alex,22,2,Designer,3,4,Denver,2
+T.T,Alex,29,2,Designer,3,4,Denver,3
 T.T,Alex,32,2,Designer,3,4,Denver,4
-U^U,Mike,29,2,Scientist,3,5,Boulder,3
-^v^,Kate,22,1,Student,3,7,Denver,1
+U^U,Mike,18,2,Student,3,5,Boulder,1
+U^U,Mike,24,2,Student,3,5,Boulder,2
+U^U,Mike,27,2,Scientist,3,5,Boulder,3
+U^U,Mike,34,2,Scientist,3,5,Boulder,4
+^v^,Kate,20,1,Student,3,7,Denver,1
+^v^,Kate,22,1,Student,3,7,Denver,2
+^v^,Kate,25,1,Grad Student,3,7,Denver,3
+^v^,Kate,35,1,Grad Student,3,7,Denver,4
+o.o,Joseph,19,2,Grad Student,3,6,Westminster,1
+o.o,Joseph,23,2,Grad Student,3,6,Westminster,2
 o.o,Joseph,26,2,Grad Student,3,6,Westminster,3
+o.o,Joseph,31,2,Grad Student,3,6,Westminster,4
 $v$,Ryan,20,2,Student,4,5,Denver,1
+$v$,Ryan,23,2,Student,4,5,Denver,2
+$v$,Ryan,28,2,Graphic Designer,4,5,Denver,3
+$v$,Ryan,31,2,Graphic Designer,4,5,Denver,4
 @_@,Sarah,19,1,Student,4,6,Boulder,1
+@_@,Sarah,23,1,Student,4,6,Boulder,2
+@_@,Sarah,26,1,Researcher,4,6,Boulder,3
+@_@,Sarah,32,1,Researcher,4,6,Boulder,4
+홋,Jennifer,20,1,Student,4,7,Westminster,1
 홋,Jennifer,23,1,Student,4,7,Westminster,2
--_-,Andrew,26,2,Technician,5,6,Denver,3
+홋,Jennifer,27,1,D,4,7,Westminster,3
+홋,Jennifer,33,1,Student,4,7,Westminster,4
+-_-,Andrew,20,2,Technician,5,6,Denver,1
+-_-,Andrew,24,2,Technician,5,6,Denver,2
+-_-,Andrew,29,2,Technician,5,6,Denver,3
+-_-,Andrew,34,2,Technician,5,6,Denver,4
 *_*,Jack,18,2,Student,5,7,Westminster,1
+*_*,Jack,23,2,Student,5,7,Westminster,2
+*_*,Jack,29,2,Student,5,7,Westminster,3
+*_*,Jack,32,2,Student,5,7,Westminster,4
++_+,Catherine,19,1,Actor,6,7,Denver,1
++_+,Catherine,23,1,Actor,6,7,Denver,2
 +_+,Catherine,29,1,Actor,6,7,Denver,3
++_+,Catherine,34,1,Actor,6,7,Denver,4
+:-),Cameron,18,2,Photographer,1,2,Denver,1
+:-),Cameron,22,2,Photographer,1,2,Denver,2
+:-),Cameron,27,2,Photographer,1,2,Denver,3
 :-),Cameron,31,2,Photographer,1,2,Denver,4
+;-(,Grace,19,1,Teacher,1,6,Westminster,1
+;-(,Grace,22,1,Teacher,1,6,Westminster,2
+;-(,Grace,26,1,Teacher,1,6,Westminster,3
 ;-(,Grace,32,1,Teacher,1,6,Westminster,4
