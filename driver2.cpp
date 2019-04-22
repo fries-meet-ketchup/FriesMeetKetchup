@@ -33,18 +33,60 @@ int main(int argc, char* argv[])
   cout << "# Choose the cuisine of food:"<<endl;
   cout<< "1.American\n2.Japanese\n3.Chinese\n4.Korean\n5.Mediterranean\n6.Italian\n7.Indian\n8.Mexican" << endl;
   getline(cin, answerCountry);
+  if(stoi(answerCountry) >= 1 && stoi(answerCountry) <= 8){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answerCountry);
+  }
   cout << "# Choose the city:" <<endl;
   cout<< "1.Boulder\n2.Westminster\n3.Denver" << endl;
   getline(cin, answerCity);
+  if(stoi(answerCity) >= 1 && stoi(answerCity) <= 3){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answerCity);
+  }
   cout << "# Choose the type of food: "<<endl;
   cout<<"1.Brunch\n2.Coffee\n3.Restaurant" << endl;
   getline(cin, answerType);
+  if(stoi(answerType) >= 1 && stoi(answerType) <= 3){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answerType);
+  }
   cout << "# Are you vegeterian or not: Y or N." << endl;
   getline(cin, answerVeg);
+  if(answerVeg == "Y" || answerVeg == "N" ||answerVeg == "y" || answerVeg == "n"){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answerVeg);
+  }
   cout << "# Choose the price: $ or $$, or $$$" << endl;
   getline(cin, answerPrice);
+  if(answerPrice == "$" || answerPrice == "$$" ||answerPrice == "$$$" ){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answerPrice);
+  }
   cout<< "Are you planning to go with someone?(Y/N)"<<endl;
   getline(cin, answer1);
+  if(answer1 == "Y" || answer1 == "N" ||answer1 == "y" || answer1 == "n"){
+     continue;
+  }
+  else {
+    cout <<"Invalid date! Please try again"<<endl;
+    getline(cin, answer1);
+  }
   if (answer1 == "N"){
     cout << "Would you like to join someone?(Y/N)"<<endl;
     getline(cin, YorN);
