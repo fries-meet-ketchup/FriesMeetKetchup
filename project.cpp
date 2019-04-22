@@ -135,10 +135,21 @@ void Heap::printArray(int n)
   }
   else{
     for(int i = 0; i < maxQueueSize; ++i){
-      Node temp=peek();
+      Node temp = peek();
       cout << temp.restaurant << ", rating:" << temp.rating<<endl;
       dequeue();
     }
   }
 }
 
+// void Heap::printVector(int n){
+//   // cout<<"---------------Matched People:--------------------"<<endl;
+//   // for(int i = 0; i < n; ++i){
+//   //   Node2 temp = pop();
+//   //   cout<<"Profile: "<<temp.face<<endl;
+//   //   cout<<" "<<"Name: "<<temp.name<<endl;
+//   //   cout<<" "<<"Age: "<<temp.realAge<<endl;
+//   //   cout<<" "<<"Job: "<<temp.job<<endl;
+//   //   cout<<" "<<"City: "<<temp.city<<endl;
+//   // }
+// }
