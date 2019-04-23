@@ -190,7 +190,11 @@ int main(int argc, char* argv[])
               z.face=face;
               z.realAge=realAge;
               z.city=city;
-              if(gender == answerGender && age == answerAge && interest1 == answerInterest1)
+              if(gender == answerGender && age == answerAge && interest1 == answerInterest1 && interest2 == answerInterest2)
+              {
+                v.push_back(z);
+              }
+              if(gender == answerGender && age == answerAge && interest2 == answerInterest1 && interest1 == answerInterest2)
               {
                 v.push_back(z);
               }
